@@ -23,6 +23,30 @@ function App() {
     window.Tawk_API = window.Tawk_API || {}
     window.Tawk_LoadStart = new Date()
 
+    const style = document.createElement('style')
+    style.textContent = `
+      .tawk-minified,
+      .tawk-minified iframe,
+      .tawk-iframe-wrapper iframe,
+      .tawk-minified .tawk-icon,
+      .tawk-minified .tawk-button,
+      #tawkchat-maximized-content,
+      .tawk-chat {
+        max-width: 100% !important;
+        width: auto !important;
+      }
+      .tawk-minified {
+        right: 0 !important;
+      }
+      .swal2-popup {
+        width: min(92vw, 560px) !important;
+      }
+      .swal2-html-container {
+        word-wrap: break-word;
+      }
+    `
+    document.head.appendChild(style)
+
     const s1 = document.createElement("script")
     s1.async = true
     s1.src = 'https://embed.tawk.to/6a159c10ab32691c3031f901/1jpi6j8qr'
@@ -36,6 +60,7 @@ function App() {
     return () => {
       const existing = document.getElementById('tawk-script')
       existing?.parentNode?.removeChild(existing)
+      style.remove()
     }
   }, [])
 
