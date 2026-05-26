@@ -142,7 +142,7 @@ function Contact() {
                   ></textarea>
                 </div>
                 <div className="col-12 text-end">
-                  <button type="submit" className="btn btn-primary btn-lg rounded-pill px-5" style={{ backgroundColor: COLOR.primary, borderColor: COLOR.primary, display: 'flex', justifySelf: 'center', minWidth: '160px'   }}>
+                  <button type="submit" className="btn btn-primary btn-lg rounded-pill w-100 w-sm-auto px-5" style={{ backgroundColor: COLOR.primary, borderColor: COLOR.primary, display: 'flex', justifySelf: 'center' }}>
                     Send Message
                   </button>
                 </div>

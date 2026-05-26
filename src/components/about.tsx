@@ -52,7 +52,7 @@ function About() {
                     </div>
                   </div>
                 </div>
-                <a href="#contact" className="btn btn-close-white" style={{ backgroundColor: COLOR.scondary, color: '#fff', minWidth: '180px' }}>
+                <a href="#contact" className="btn btn-close-white w-100 w-sm-auto" style={{ backgroundColor: COLOR.scondary, color: '#fff' }}>
                   Learn More About Me
                 </a>
               </div>
@@ -60,16 +60,16 @@ function About() {
           </div>
 
           <div className="col-lg-6">
-            <div className="rounded-4 overflow-hidden shadow-sm" style={{ minHeight: '420px', background: 'linear-gradient(180deg, rgba(153, 113, 21, 0.12), rgba(11, 33, 70, 0.1))' }}>
-              <img src="/images/person/24person.jpg" alt="About me" className="img-fluid w-100 h-100 object-fit-cover" style={{ minHeight: '420px' }} />
+            <div className="rounded-4 overflow-hidden shadow-sm" style={{ background: 'linear-gradient(180deg, rgba(153, 113, 21, 0.12), rgba(11, 33, 70, 0.1))' }}>
+              <img src="/images/person/24person.jpg" alt="About me" className="img-fluid w-100 object-fit-cover" />
             </div>
           </div>
         </div>
 
         <div className="row align-items-center g-5 mt-5">
           <div className="col-lg-6">
-            <div className="rounded-4 overflow-hidden shadow-sm" style={{ minHeight: '400px', background: 'linear-gradient(180deg, rgba(11, 33, 70, 0.14), rgba(153, 113, 21, 0.08))' }}>
-              <img src="/images/person/34person.jpg" alt="Our mission" className="img-fluid w-100 h-100 object-fit-cover" style={{ minHeight: '400px' }} />
+            <div className="rounded-4 overflow-hidden shadow-sm" style={{ background: 'linear-gradient(180deg, rgba(11, 33, 70, 0.14), rgba(153, 113, 21, 0.08))' }}>
+              <img src="/images/person/34person.jpg" alt="Our mission" className="img-fluid w-100 object-fit-cover" />
             </div>
           </div>
 

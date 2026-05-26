@@ -62,10 +62,10 @@ function Carousel() {
                     {slide.description}
                   </p>
                   <div className="d-flex gap-3 flex-column flex-sm-row">
-                    <a className="btn btn-light btn-lg shadow-sm" href={slide.ctaPrimaryHref || '#'} style={{ color: COLOR.scondary, minWidth: '160px' }}>
+                    <a className="btn btn-light btn-lg shadow-sm w-100 w-sm-auto" href={slide.ctaPrimaryHref || '#'} style={{ color: COLOR.scondary }}>
                       {slide.ctaPrimary}
                     </a>
-                    <a className="btn btn-outline-light btn-lg" href={slide.ctaSecondaryHref || '#'} style={{ minWidth: '160px', }}>
+                    <a className="btn btn-outline-light btn-lg w-100 w-sm-auto" href={slide.ctaSecondaryHref || '#'}>
                       {slide.ctaSecondary}
                     </a>
                   </div>

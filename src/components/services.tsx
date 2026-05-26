@@ -56,12 +56,11 @@ function Services() {
           </div>
 
           <div className="col-lg-6">
-            <div className="rounded-4 overflow-hidden shadow-sm" style={{ minHeight: '520px', background: 'linear-gradient(180deg, rgba(153, 113, 21, 0.15), rgba(11, 33, 70, 0.08))' }}>
+            <div className="rounded-4 overflow-hidden shadow-sm" style={{ background: 'linear-gradient(180deg, rgba(153, 113, 21, 0.15), rgba(11, 33, 70, 0.08))' }}>
               <img
                 src="/images/person/3person.jpg"
                 alt="Service illustration"
-                className="img-fluid w-100 h-100 object-fit-cover"
-                style={{ minHeight: '520px' }}
+                className="img-fluid w-100 object-fit-cover"
               />
             </div>
           </div>
