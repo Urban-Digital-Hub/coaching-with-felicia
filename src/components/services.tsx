@@ -5,7 +5,7 @@ function Services() {
     <section className="py-5" style={{ backgroundColor: '#f7f3ea', color: COLOR.scondary }}>
       <div className="container">
         <div className="row align-items-center gy-5">
-          <div className="col-lg-6">
+          <div className="col-12 col-lg-6">
             <div className="px-4 py-5 rounded-4" style={{ backgroundColor: '#ffffff', boxShadow: '0 24px 60px rgba(11, 33, 70, 0.08)' }}>
               <span className="badge rounded-pill px-3 py-2 mb-3" style={{ backgroundColor: COLOR.primary, color: '#fff' }}>
                 Services
@@ -55,7 +55,7 @@ function Services() {
             </div>
           </div>
 
-          <div className="col-lg-6">
+          <div className="col-12 col-lg-6">
             <div className="rounded-4 overflow-hidden shadow-sm" style={{ background: 'linear-gradient(180deg, rgba(153, 113, 21, 0.15), rgba(11, 33, 70, 0.08))' }}>
               <img
                 src="/images/person/3person.jpg"
@@ -67,19 +67,19 @@ function Services() {
         </div>
 
         <div className="row g-4 mt-5">
-          <div className="col-lg-4">
+          <div className="col-12 col-lg-4">
             <div className="p-4 rounded-4 h-100" style={{ backgroundColor: '#ffffff', border: `1px solid ${COLOR.primary}20` }}>
               <h5 style={{ color: COLOR.scondary }}>Consultation</h5>
               <p className="text-muted">Personalized introductions and clear paths to the right service for you.</p>
             </div>
           </div>
-          <div className="col-lg-4">
+          <div className="col-12 col-lg-4">
             <div className="p-4 rounded-4 h-100" style={{ backgroundColor: '#ffffff', border: `1px solid ${COLOR.primary}20` }}>
               <h5 style={{ color: COLOR.scondary }}>Strategy</h5>
               <p className="text-muted">Focused plans that help you move forward with confidence and ease.</p>
             </div>
           </div>
-          <div className="col-lg-4">
+          <div className="col-12 col-lg-4">
             <div className="p-4 rounded-4 h-100" style={{ backgroundColor: '#ffffff', border: `1px solid ${COLOR.primary}20` }}>
               <h5 style={{ color: COLOR.scondary }}>Growth</h5>
               <p className="text-muted">Support that evolves with your progress and keeps goals within reach.</p>

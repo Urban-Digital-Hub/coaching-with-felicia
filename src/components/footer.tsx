@@ -8,8 +8,8 @@ function Footer() {
     <footer className="py-5" style={{ backgroundColor: COLOR.scondary, color: '#f1f3f8' }}>
       <div className="container">
         <div className="row gy-4 gy-lg-0">
-          <div className="col-lg-4">
-            <h5 className="mb-3" style={{ color: '#fff' }}>Felicia</h5>
+          <div className="col-12 col-lg-4">
+            <h5 className="mb-3" style={{ color: '#fff' }}>Felecia</h5>
             <p className="text- mb-4" style={{ maxWidth: '420px' }}>
               Crafted for modern wellness and elegant service design. We bring calm, clarity, and premium care to every experience.
             </p>
@@ -51,7 +51,7 @@ function Footer() {
             </div>
           </div>
 
-          <div className="col-lg-2">
+          <div className="col-12 col-lg-2">
             <h6 className="mb-3 text-white">Company</h6>
             <ul className="list-unstyled text-muted mb-0">
               <li className="mb-2 d-flex align-items-center gap-2">
@@ -73,7 +73,7 @@ function Footer() {
             </ul>
           </div>
 
-          <div className="col-lg-3">
+          <div className="col-12 col-lg-3">
             <h6 className="mb-3 text-white">Support</h6>
             <ul className="list-unstyled text-muted mb-0">
               <li className="mb-2 d-flex align-items-center gap-2">
@@ -95,7 +95,7 @@ function Footer() {
             </ul>
           </div>
 
-          <div className="col-lg-3">
+          <div className="col-12 col-lg-3">
             <h6 className="mb-3 text-white">Newsletter</h6>
             <p className="text-white">Stay in touch for new services and updates.</p>
             <form className="d-flex flex-column gap-3">
@@ -120,7 +120,7 @@ function Footer() {
         </div>
 
         <div className="border-top border-white-10 pt-4 mt-5 text-center text-white" style={{ color: '#ced4da' }}>
-          © {currentYear} Felicia. All rights reserved.
+          © {currentYear} Felecia. All rights reserved.
         </div>
       </div>
     </footer>

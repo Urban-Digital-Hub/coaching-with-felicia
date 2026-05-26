@@ -7,20 +7,20 @@ import Testimonial from "./components/testimonial"
 import Contact from "./components/contact"
 import { Route, Routes } from "react-router-dom"
 import Notfound from "./pages/notfound"
-import Swal from "sweetalert2"
+// import Swal from "sweetalert2"
 import { useEffect } from "react"
 import BookSession from "./components/bookSession"
 
 declare global {
   interface Window {
-    Tawk_API: any
-    Tawk_LoadStart: Date
+    Tawk_API?: Record<string, unknown>
+    Tawk_LoadStart?: Date
   }
 }
 
 function App() {
   useEffect(() => {
-    window.Tawk_API = window.Tawk_API || {}
+    window.Tawk_API = window.Tawk_API ?? ({} as Record<string, unknown>)
     window.Tawk_LoadStart = new Date()
 
     const style = document.createElement('style')
@@ -64,37 +64,37 @@ function App() {
     }
   }, [])
 
-  const welcomeMessage = () => {
-    const audio = new Audio('/sound/week7-brrring.mp3')
+  // const welcomeMessage = () => {
+    // const audio = new Audio('/sound/week7-brrring.mp3')
 
-    Swal.fire({
-      title: 'Welcome to Coaching with Felicia!',
-      text: `You’ve carried so much for so long. You’ve survived seasons that tried to break you. You’ve held families, careers, relationships, and expectations together with your bare hands. But now… you’re ready for something different. You’re ready for peace. You’re ready for clarity. You’re ready to come home to yourself. This is where your Tactical Pause begins.`,
+  //   Swal.fire({
+  //     title: 'Welcome to Coaching with Felicia!',
+  //     text: `You’ve carried so much for so long. You’ve survived seasons that tried to break you. You’ve held families, careers, relationships, and expectations together with your bare hands. But now… you’re ready for something different. You’re ready for peace. You’re ready for clarity. You’re ready to come home to yourself. This is where your Tactical Pause begins.`,
 
-      icon: 'success',
-      confirmButtonText: 'Explore Now',
-      background: '#f7f4ed',
-      color: '#1e293b',
+  //     icon: 'success',
+  //     confirmButtonText: 'Explore Now',
+  //     background: '#f7f4ed',
+  //     color: '#1e293b',
 
-      didOpen: () => {
-        audio.play()
-      },
+  //     didOpen: () => {
+  //       audio.play()
+  //     },
 
-      willClose: () => {
-        audio.pause()
-        audio.currentTime = 0
-      }
-    }).then((result) => {
-      if (result.isConfirmed) {
-        audio.play()
-      }
-    })
-  }
+  //     willClose: () => {
+  //       audio.pause()
+  //       audio.currentTime = 0
+  //     }
+  //   }).then((result) => {
+  //     if (result.isConfirmed) {
+  //       audio.play()
+  //     }
+  //   })
+  // }
 
   // Show welcome message on initial load
-  useEffect(() => {
-    welcomeMessage()
-  }, [])
+  // useEffect(() => {
+  //   welcomeMessage()
+  // }, [])
   return (
     <>
       <Header />

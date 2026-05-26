@@ -24,7 +24,7 @@ export default function Header() {
       <div className="container">
         <Link className="navbar-brand d-flex align-items-center" to="/">
           <img src="/images/logo.jpeg" alt="Logo" width="30" height="24" className="me-2" />
-          Felicia
+          Felecia
         </Link>
 
         <button

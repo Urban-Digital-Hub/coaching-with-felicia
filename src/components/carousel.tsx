@@ -7,7 +7,7 @@ const slides = [
     ctaPrimary: 'Get In Touch',
     ctaPrimaryHref: '/contact',
     ctaSecondary: 'Book a Session',
-    ctaSecondaryHref: 'https://calendar.app.google/D3Qd7kxgAXbesDXW9',
+    ctaSecondaryHref: 'https://calendly.com/blueinv73/30min',
   },
   {
     title: 'A modern sanctuary for growth',

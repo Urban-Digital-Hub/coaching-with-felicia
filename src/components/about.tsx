@@ -5,7 +5,7 @@ function About() {
     <section className="py-5" style={{ backgroundColor: '#f7f4ed', color: COLOR.scondary }}>
       <div className="container">
         <div className="row align-items-center g-5">
-          <div className="col-lg-6">
+          <div className="col-12 col-lg-6">
             <div className="px-4 py-5 rounded-4 shadow-sm" style={{ backgroundColor: 'rgba(255, 255, 255, 0.96)' }}>
               <span className="badge rounded-pill px-3 py-2 mb-3" style={{ backgroundColor: COLOR.primary, color: '#fff' }}>
                 About Me
@@ -59,7 +59,7 @@ function About() {
             </div>
           </div>
 
-          <div className="col-lg-6">
+          <div className="col-12 col-lg-6">
             <div className="rounded-4 overflow-hidden shadow-sm" style={{ background: 'linear-gradient(180deg, rgba(153, 113, 21, 0.12), rgba(11, 33, 70, 0.1))' }}>
               <img src="/images/person/24person.jpg" alt="About me" className="img-fluid w-100 object-fit-cover" />
             </div>
@@ -67,13 +67,13 @@ function About() {
         </div>
 
         <div className="row align-items-center g-5 mt-5">
-          <div className="col-lg-6">
+          <div className="col-12 col-lg-6">
             <div className="rounded-4 overflow-hidden shadow-sm" style={{ background: 'linear-gradient(180deg, rgba(11, 33, 70, 0.14), rgba(153, 113, 21, 0.08))' }}>
               <img src="/images/person/34person.jpg" alt="Our mission" className="img-fluid w-100 object-fit-cover" />
             </div>
           </div>
 
-          <div className="col-lg-6">
+          <div className="col-12 col-lg-6">
             <div className="px-4 py-5 rounded-4 shadow-sm" style={{ backgroundColor: 'rgba(255, 255, 255, 0.96)' }}>
               <span className="badge rounded-pill px-3 py-2 mb-3" style={{ backgroundColor: COLOR.scondary, color: '#fff' }}>
                 Mission

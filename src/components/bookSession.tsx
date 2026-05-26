@@ -24,7 +24,7 @@ function BookSession() {
       <div className="container">
 
         <div className="row justify-content-center">
-          <div className="col-lg-7">
+          <div className="col-12 col-lg-7">
 
             <div
               className="rounded-4 p-5 shadow"
