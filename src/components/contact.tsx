@@ -87,8 +87,10 @@ function Contact() {
                     </svg>
                   </div>
                   <div>
+                    <a href='tel:+16086719776' style={{ textDecoration: 'none'}}>
                     <h6 className="mb-1" style={{ color: COLOR.scondary }}>Phone</h6>
-                    <p className="mb-0 text-muted">+1 234 567 890</p>
+                    <p className="mb-0 text-muted">+1 608 671 9776</p>
+                    </a>
                   </div>
                 </div>
               </div>

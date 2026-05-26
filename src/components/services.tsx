@@ -91,7 +91,7 @@ function Services() {
         <div className="rounded-4 mt-5 p-5 text-center" style={{ backgroundColor: COLOR.scondary, color: '#fff' }}>
           <h2 className="fw-bold mb-3">A services experience built around you.</h2>
           <p className="mb-4 text-white-75">From one-on-one guidance to premium digital support, our services bring calm, clarity, and confidence to every part of your journey.</p>
-          <a className="btn btn-outline-light btn-lg" href="https://calendar.app.google/D3Qd7kxgAXbesDXW9" target='blank'  rel="noreferrer" style={{ borderColor: '#fff' }}>
+          <a className="btn btn-outline-light btn-lg" href="https://calendly.com/blueinv73/30min" target='blank'  rel="noreferrer" style={{ borderColor: '#fff' }}>
             Book a Session
           </a>
         </div>

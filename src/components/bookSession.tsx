@@ -10,7 +10,8 @@ function BookSession() {
     // You can later track this in analytics or EmailJS if needed
 
     window.open(
-      'https://calendar.app.google/D3Qd7kxgAXbesDXW9',
+    //   'https://calendar.app.google/D3Qd7kxgAXbesDXW9',
+          'https://calendly.com/blueinv73/30min',
       '_blank'
     )
   }
@@ -82,7 +83,7 @@ function BookSession() {
               </button>
 
               <p className="text-muted mt-3 small text-center">
-                You will be redirected to choose a time on Google Calendar.
+                You will be redirected to choose a time on Calendly.
               </p>
 
             </div>
