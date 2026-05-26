@@ -1,6 +1,38 @@
+import React from 'react'
+import { useState } from 'react';
 import COLOR from '../../constants/color'
-
+import Swal from 'sweetalert2';
 function Contact() {
+   const [result, setResult] = React.useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "0e96f1ee-8a50-404c-baab-4973d5e0dbff");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Form Submitted Successfully");
+      Swal.fire({
+        icon: 'success',
+        title: 'Success',
+        text: 'Your message has been sent successfully!'
+      }); 
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
+  };
+
   return (
     <section className="py-5" style={{ backgroundColor: '#f7f3ea', color: COLOR.scondary }}>
       <div className="container">
@@ -25,8 +57,10 @@ function Contact() {
                     </svg>
                   </div>
                   <div>
+                    <a href='mailto:mentoringandcoaching@yourwellnessmatters.net' style={{ textDecoration: 'none'}}>
                     <h6 className="mb-1" style={{ color: COLOR.scondary }}>Email</h6>
-                    <p className="mb-0 text-muted">hello@felicia.com</p>
+                    <p className="mb-0 text-muted">mentoringandcoaching@yourwellnessmatters.net</p>
+                    </a>
                   </div>
                 </div>
                 <div className="d-flex gap-3 align-items-start">
@@ -64,10 +98,11 @@ function Contact() {
           <div className="col-lg-6">
             <div className="rounded-4 p-5" style={{ backgroundColor: '#ffffff', boxShadow: '0 24px 60px rgba(11, 33, 70, 0.08)' }}>
               <h3 className="fw-bold mb-4" style={{ color: COLOR.scondary }}>Send us a message</h3>
-              <form className="row g-3">
+              <form className="row g-3" onSubmit={onSubmit}>
                 <div className="col-md-6">
                   <label className="form-label text-muted">Name</label>
                   <input
+                    name="name"
                     type="text"
                     className="form-control rounded-4 border bg-light"
                     placeholder="Your name"
@@ -77,6 +112,7 @@ function Contact() {
                 <div className="col-md-6">
                   <label className="form-label text-muted">Email</label>
                   <input
+                    name="email"
                     type="email"
                     className="form-control rounded-4 border bg-light"
                     placeholder="you@example.com"
@@ -86,6 +122,7 @@ function Contact() {
                 <div className="col-12">
                   <label className="form-label text-muted">Subject</label>
                   <input
+                    name="subject"
                     type="text"
                     className="form-control rounded-4 border bg-light"
                     placeholder="What can we help you with?"
@@ -95,6 +132,7 @@ function Contact() {
                 <div className="col-12">
                   <label className="form-label text-muted">Message</label>
                   <textarea
+                    name="message"
                     className="form-control rounded-4 border bg-light"
                     rows={6}
                     placeholder="Write your message here..."
@@ -102,11 +140,12 @@ function Contact() {
                   ></textarea>
                 </div>
                 <div className="col-12 text-end">
-                  <button type="submit" className="btn btn-primary btn-lg rounded-pill px-5" style={{ backgroundColor: COLOR.primary, borderColor: COLOR.primary }}>
+                  <button type="submit" className="btn btn-primary btn-lg rounded-pill px-5" style={{ backgroundColor: COLOR.primary, borderColor: COLOR.primary, display: 'flex', justifySelf: 'center', minWidth: '160px'   }}>
                     Send Message
                   </button>
                 </div>
               </form>
+               {/* <span className='text-center'>{result}</span> */}
             </div>
           </div>
         </div>

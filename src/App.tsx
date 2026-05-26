@@ -12,6 +12,19 @@ import { useEffect } from "react"
 
 
 function App() {
+ 
+
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/6a159c10ab32691c3031f901/1jpi6j8qr';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+
+
   const welcomeMessage = () => {
     const audio = new Audio('/sound/week7-brrring.mp3')
 
