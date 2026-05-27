@@ -47,7 +47,7 @@ function Carousel() {
               key={slide.title}
               className={`carousel-item ${index === 0 ? 'active' : ''}`}
               style={{
-                backgroundImage: 'linear-gradient(rgba(15, 23, 42, 0.55), rgba(15, 23, 42, 0.55)), url(/images/person/14person.jpg)',
+                backgroundImage: 'linear-gradient(rgba(15, 23, 42, 0.55), rgba(15, 23, 42, 0.55)), url(/images/person/first.jpeg)',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 minHeight: '70vh',
