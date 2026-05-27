@@ -12,14 +12,10 @@ export default function Header() {
     setShowModal(false)
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    // Replace with real submit logic as needed
-   
-  }
 
 
-  const onSubmit = async (event: FormEvent<HTMLFormElement>) => {
+
+  const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
       event.preventDefault();
       const formData = new FormData(event.currentTarget);
   
