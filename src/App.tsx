@@ -10,6 +10,7 @@ import Notfound from "./pages/notfound"
 // import Swal from "sweetalert2"
 import { useEffect } from "react"
 import BookSession from "./components/bookSession"
+import Blog from "./components/blog"
 
 declare global {
   interface Window {
@@ -110,6 +111,7 @@ function App() {
               <Services />
               <BookSession />
               <Testimonial />
+              <Blog />
               <Contact />
             </>
           }
@@ -119,6 +121,8 @@ function App() {
         <Route path="/testimonial" element={<Testimonial />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<Notfound />} />
+        <Route path="/testimonial" element={<Testimonial />} />
+        <Route path="/blog" element={<Blog />} />
       </Routes>
 
       <Footer />

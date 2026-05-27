@@ -84,14 +84,14 @@ export default function Header() {
                     Menstorship & Business </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <Link className="dropdown-item" to="/testimonial">
                     Testimonials
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <Link className="dropdown-item" to="/blog">
                     Blog & Resources
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </li>
