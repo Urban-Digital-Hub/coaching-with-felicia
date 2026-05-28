@@ -143,7 +143,7 @@ function About() {
               }}
             >
               <img
-                src="/images/person/24person.jpg"
+                src="/images/person/first3.jpeg"
                 alt="About me"
                 className="img-fluid w-100 object-fit-cover"
               />
