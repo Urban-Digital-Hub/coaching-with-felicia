@@ -50,7 +50,7 @@ function App() {
 
     const s1 = document.createElement("script")
     s1.async = true
-    s1.src = 'https://embed.tawk.to/6a159c10ab32691c3031f901/1jpi6j8qr'
+    s1.src = 'https://embed.tawk.to/6a182caae37d1e1c33dfc947/default'
     s1.charset = 'UTF-8'
     s1.setAttribute('crossorigin', '*')
     s1.id = 'tawk-script'
