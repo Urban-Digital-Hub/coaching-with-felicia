@@ -31,7 +31,7 @@ const slides = [
 
 function Carousel() {
     const welcomeMessage = () => {
-      const audio = new Audio('/sound/week7-brrring.mp3')
+      // const audio = new Audio('/sound/week7-brrring.mp3')
   
       Swal.fire({
         title: 'Welcome to Coaching with Felecia!',
@@ -42,18 +42,18 @@ function Carousel() {
         background: '#f7f4ed',
         color: '#1e293b',
   
-        didOpen: () => {
-          audio.play()
-        },
+        // didOpen: () => {
+        //   audio.play()
+        // },
   
-        willClose: () => {
-          audio.pause()
-          audio.currentTime = 0
-        }
-      }).then((result) => {
-        if (result.isConfirmed) {
-          audio.play()
-        }
+        // willClose: () => {
+        //   audio.pause()
+        //   audio.currentTime = 0
+        // }
+      // }).then((result) => {
+      //   if (result.isConfirmed) {
+      //     // audio.play()
+      //   }
       })
     }
   
