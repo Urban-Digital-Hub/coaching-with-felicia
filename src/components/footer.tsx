@@ -1,6 +1,7 @@
 import COLOR from '../../constants/color'
 import { FaInstagram, FaFacebookF, FaLinkedinIn, FaTwitter } from 'react-icons/fa'
 import { SiTiktok } from 'react-icons/si'
+import { Link } from 'react-router-dom'
 
 function Footer() {
   const currentYear = new Date().getFullYear()
@@ -9,7 +10,7 @@ function Footer() {
       <div className="container">
         <div className="row gy-4 gy-lg-0">
           <div className="col-12 col-lg-4">
-            <h5 className="mb-3" style={{ color: '#fff' }}>Felecia</h5>
+            <h5 className="mb-3" style={{ color: COLOR.primary }}><b>Felecia</b></h5>
             <p className="text- mb-4" style={{ maxWidth: '420px' }}>
               Crafted for modern wellness and elegant service design. We bring calm, clarity, and premium care to every experience.
             </p>
@@ -52,37 +53,49 @@ function Footer() {
           </div>
 
           <div className="col-12 col-lg-2">
-            <h6 className="mb-3 text-white">Company</h6>
+            <h6 className="mb-3 text-white"><b>Company</b></h6>
             <ul className="list-unstyled text-muted mb-0">
               <li className="mb-2 d-flex align-items-center gap-2">
                 <span style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: COLOR.primary }} />
-                <a href="#" className="text-white text-decoration-none">About</a>
+                <Link to={"/about"} className="text-white text-decoration-none">
+                  About
+                </Link>
               </li>
               <li className="mb-2 d-flex align-items-center gap-2">
                 <span style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: COLOR.primary }} />
-                <a href="#" className="text-white text-decoration-none">Services</a>
+                <Link to={"/services"} className="text-white text-decoration-none">
+                  Services
+                </Link>
               </li>
               <li className="mb-2 d-flex align-items-center gap-2">
                 <span style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: COLOR.primary }} />
-                <a href="#" className="text-white text-decoration-none">Contact</a>
+                <Link to={"/contact"} className="text-white text-decoration-none">
+                  Contact
+                </Link>
               </li>
               <li className="d-flex align-items-center gap-2">
                 <span style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: COLOR.primary }} />
-                <a href="#" className="text-white text-decoration-none">Blog</a>
+                <Link to={"/blog"} className="text-white text-decoration-none">
+                  Blog
+                </Link>
               </li>
             </ul>
           </div>
 
           <div className="col-12 col-lg-3">
-            <h6 className="mb-3 text-white">Support</h6>
+            <h6 className="mb-3 text-white"><b>Support</b></h6>
             <ul className="list-unstyled text-muted mb-0">
               <li className="mb-2 d-flex align-items-center gap-2">
                 <span style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: COLOR.primary }} />
-                <a href="#" className="text-white text-decoration-none">FAQ</a>
+                <Link to={"/faq"} className="text-white text-decoration-none">
+                  FAQ
+                </Link>
               </li>
               <li className="mb-2 d-flex align-items-center gap-2">
                 <span style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: COLOR.primary }} />
-                <a href="#" className="text-white text-decoration-none">Privacy</a>
+                <Link to={"/privacy"} className="text-white text-decoration-none">
+                  Privacy
+                </Link>
               </li>
               <li className="mb-2 d-flex align-items-center gap-2">
                 <span style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: COLOR.primary }} />
@@ -96,7 +109,7 @@ function Footer() {
           </div>
 
           <div className="col-12 col-lg-3">
-            <h6 className="mb-3 text-white">Newsletter</h6>
+            <h6 className="mb-3 text-white"><b>Newsletter</b></h6>
             <p className="text-white">Stay in touch for new services and updates.</p>
             <form className="d-flex flex-column gap-3">
               <div className="input-group shadow-sm">
